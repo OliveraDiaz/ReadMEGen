@@ -51,8 +51,13 @@ const questions = [
     name: 'license',
     message: 'Select a license for your project.',
     choices: ['MIT', 'Apache', 'GPL', 'BSD', 'None'],
+    
 },
-
+{
+    type: 'input',
+    name: 'questions',
+    message: 'Provide instructions on how to reach you with additional questions.',
+},
 {
     type: 'input',
     name: 'links',
@@ -66,7 +71,7 @@ const questions = [
 {
     type: 'input',
     name: 'email',
-    message: 'Provide your email address.',
+    message: 'Where can users contact you with quesitons?',
 
     type: 'input',
     name: 'screenshot',

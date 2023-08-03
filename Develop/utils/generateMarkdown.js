@@ -3,14 +3,13 @@
 
 function renderLicenseBadge(license) {
   if (license === 'MIT') {
-  
-    return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
+    return `![License](https://img.shields.io/badge/License-MIT-yellow.svg)`
   }
   else if (license === 'Apache') {
     return `![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`
   }
   else if (license === 'GPL') {
-    return `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`
+    return `![License](https://img.shields.io/badge/License-GPLv3-blue.svg)`
   }
   else if (license === 'BSD') {
     return `![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)`
@@ -64,6 +63,8 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
+${renderLicenseBadge(data.license)} 
+
 ## Description
 ${data.description}
 
@@ -74,6 +75,7 @@ ${data.description}
 * [Contribution](#contribution)
 * [Test](#test)
 * [Links](#links)
+* [Questions](#questions)
 * [Screenshot](#screenshot)
 * [License](#license)
 
@@ -89,17 +91,17 @@ ${data.contribution}
 ## Test
 ${data.test}
 
+## Questions
+You can reach me with questions at ${data.questions}.
+GitHub: ${data.github}
+
 ## Links
 ${data.links}
 
 ## Screenshot
 ${data.screenshot}
-
-## License
-${renderLicenseBadge(data.license)}
-${renderLicenseLink(data.license)}
-
 `;
+
 }
 
 module.exports = generateMarkdown;

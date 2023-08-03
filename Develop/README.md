@@ -1,7 +1,9 @@
-# titulo
+# README generator
+
+ 
 
 ## Description
-descripcion
+The readme Generator is a fast and easy way for developers to include a high quality ReadME be asking relevant questions and generating the README.
 
 ## Table of Contents
 * [Description](#description)
@@ -10,28 +12,31 @@ descripcion
 * [Contribution](#contribution)
 * [Test](#test)
 * [Links](#links)
+* [Questions](#questions)
 * [Screenshot](#screenshot)
 * [License](#license)
 
 ## Installation
-n/a
+To run this project, i had to run NPM init -y and NPM install inquirer@8.2.4
 
 ## Usage
-informacion
+To use the generator, run Node index.js in your terminal.
 
 ## Contribution
-na
+n/a
 
 ## Test
-instruciones
+n/a
+
+## Questions
+You can reach me with questions at Example@AOL.com.
+GitHub: OliveraDiaz
 
 ## Links
-enlaces
+Video link: https://watch.screencastify.com/v/cQu8Abe6JE9xTMpi9uNW
+Github link: https://github.com/OliveraDiaz/ReadMEGen.git
 
 ## Screenshot
-ReadMEGen\README.md
-
-## License
-
+![screen shot](image.png)
 
 
